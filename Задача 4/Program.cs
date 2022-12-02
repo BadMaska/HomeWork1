@@ -7,14 +7,14 @@
 */
 
 Console.WriteLine("Введи 3 числа, чтобы узнать какое из них больше");
-int a, b, c, max;
 Console.WriteLine("Введи свое первое число");
-a = Convert.ToInt32(Console.ReadLine());
+int a = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введи свое второе число");
-b = Convert.ToInt32(Console.ReadLine());
+int b = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введи свое третье число");
-c = Convert.ToInt32(Console.ReadLine());
- 
+int c = Convert.ToInt32(Console.ReadLine());
+
+int max;
 max = a;
 if (b > a)
     max = b;
