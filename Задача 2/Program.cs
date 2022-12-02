@@ -6,26 +6,20 @@ a = 2 b = 10 -> max = 10
 a = -9 b = -3 -> max = -3
 */
 
-Console.WriteLine("Введи 2 числа, чтобы узнать какое из них больше");
-int a, b;
-Console.WriteLine("Введи свое первое число");
-a = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введи свое второе число");
-b = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите первое число: ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите второе число: ");
+int num2 = Convert.ToInt32(Console.ReadLine());
  
-bool Chto0 = a > b;
-bool Chto1 = a == b;
-bool Chto2 = a < b;
- 
-if (Chto0)
+if(num1 > num2)
 {
-    Console.WriteLine($"Число {a} больше чем {b}");
+    Console.WriteLine($"{num1} больше {num2}");
 }
-else if (Chto1)
+else if (num1 < num2)
 {
-    Console.WriteLine($"Числа {a} и {b} равны");
+    Console.WriteLine($"{num1} меньше {num2}");
 }
 else
 {
-    Console.WriteLine($"Число {b} больше чем {a}");
+    Console.WriteLine("Оба числа равны");
 }
